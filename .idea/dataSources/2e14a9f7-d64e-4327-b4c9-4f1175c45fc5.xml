@@ -1624,9 +1624,9 @@ model</ColNames>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="378" parent="288" name="username">
+    <column id="378" parent="288" name="nickname">
       <Position>2</Position>
-      <DataType>varchar(24)|0s</DataType>
+      <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1636,26 +1636,26 @@ model</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="380" parent="288" name="age">
+    <column id="380" parent="288" name="icon">
       <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="381" parent="288" name="sex">
-      <Position>5</Position>
-      <DataType>varchar(8)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="382" parent="288" name="icon">
-      <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="383" parent="288" name="username">
-      <ColNames>username</ColNames>
+    <column id="381" parent="288" name="age">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="382" parent="288" name="sex">
+      <Position>6</Position>
+      <DataType>varchar(8)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="383" parent="288" name="nickname">
+      <ColNames>nickname</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
@@ -1664,9 +1664,9 @@ model</ColNames>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="385" parent="288" name="username">
-      <ColNames>username</ColNames>
-      <UnderlyingIndexName>username</UnderlyingIndexName>
+    <key id="385" parent="288" name="nickname">
+      <ColNames>nickname</ColNames>
+      <UnderlyingIndexName>nickname</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

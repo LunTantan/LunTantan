@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# custom
+.DS_Store
+.idea
+*.pyc
+*.sqlite3
+  pycache
+*.logg
+.venv medias/*
